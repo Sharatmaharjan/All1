@@ -1,0 +1,30 @@
+package com.project.restaurant;
+
+import java.util.List;
+
+public class Order {
+	
+	List<Food> items;
+	Customer customer;
+	
+	public Order (List<Food> items, Customer customer){
+		this.items = items;
+		this.customer = customer;
+	}
+
+	public List<Food> getItems() {
+		return items;
+	}
+
+	public void setItems(List<Food> items) {
+		this.items = items;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+}
